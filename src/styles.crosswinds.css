@@ -1,0 +1,118 @@
+/* styles.crosswinds.css */
+
+/* Utility Classes */
+.bg-baby-blue {
+    background-color: #4a90e2; /* Strong baby blue */
+}
+
+.bg-light-baby-blue {
+    background-color: #f0f8ff; /* Light baby blue */
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-baby-blue {
+    color: #4a90e2;
+}
+
+.text-light-baby-blue {
+    color: #add8e6; /* Light baby blue text */
+}
+
+.shadow-soft {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.radius-sm {
+    border-radius: 4px;
+}
+
+.radius-md {
+    border-radius: 8px;
+}
+
+.radius-lg {
+    border-radius: 16px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.p-1 {
+    padding: 0.5em;
+}
+
+.p-2 {
+    padding: 1em;
+}
+
+.m-1 {
+    margin: 0.5em;
+}
+
+.m-2 {
+    margin: 1em;
+}
+
+/* Component Styles */
+.btn-primary {
+    @apply bg-baby-blue text-white p-2 radius-sm;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD; /* Darker baby blue */
+}
+
+.card-primary {
+    @apply bg-white shadow-soft radius-md p-2 m-2;
+    border-left: 4px solid #4a90e2;
+}
+
+.card-header {
+    @apply bg-baby-blue text-white p-1 radius-sm;
+}
+
+.card-body {
+    @apply p-2 text-light-baby-blue;
+}
+
+.header {
+    @apply text-center bg-light-baby-blue p-2 radius-lg;
+}
+
+.header-title {
+    @apply text-baby-blue;
+}
+
+/* Custom Sections */
+.hero {
+    @apply bg-baby-blue text-white p-2 flex-center flex-column;
+    min-height: 300px;
+}
+
+.footer {
+    @apply bg-light-baby-blue text-center p-2;
+}
